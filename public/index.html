@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediGuard - Advanced Medicine Safety Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="medical-cross">
+                <div class="cross-vertical"></div>
+                <div class="cross-horizontal"></div>
+            </div>
+            <h3>Loading MediGuard</h3>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-virus"></i>
+                <span>MediGuard</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="login.html" class="nav-link">login</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="floating-pills"></div>
+            <div class="dna-helix"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Trusted by 50,000+ Users</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Protect Yourself From</span>
+                    <span class="title-highlight">Dangerous Drug Interactions</span>
+                </h1>
+                <p class="hero-description">
+                    Our AI-powered platform instantly analyzes your medications to detect harmful interactions, 
+                    side effects, and provides personalized safety recommendations in real-time.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary pulse-btn" id="get-started-btn">
+                        <i class="fas fa-rocket"></i>
+                        Start Checking Now - Free!
+                    </button>
+                    <button class="btn btn-secondary demo-btn" id="watch-demo-btn">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50000">0</div>
+                        <div class="stat-label">Lives Protected</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="1500000">0</div>
+                        <div class="stat-label">Interactions Checked</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="99.9">0</div>
+                        <div class="stat-label">Accuracy Rate</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-interface">
+                            <div class="interface-header">
+                                <div class="status-bar"></div>
+                                <h4>Medicine Checker</h4>
+                            </div>
+                            <div class="medicine-cards">
+                                <div class="medicine-card">
+                                    <i class="fas fa-pills"></i>
+                                    <span>Aspirin</span>
+                                    <div class="status safe">Safe</div>
+                                </div>
+                                <div class="medicine-card">
+                                    <i class="fas fa-capsules"></i>
+                                    <span>Ibuprofen</span>
+                                    <div class="status warning">Warning</div>
+                                </div>
+                            </div>
+                            <div class="interaction-alert">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>Potential Interaction Detected</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose MediGuard?</h2>
+                <p class="section-subtitle">Advanced AI technology meets healthcare expertise</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-animation="slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Analysis</h3>
+                    <p>Our advanced machine learning algorithms analyze millions of drug interactions in seconds.</p>
+                </div>
+                <div class="feature-card" data-animation="slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Real-Time Results</h3>
+                    <p>Get instant feedback on potential interactions and side effects as you enter medications.</p>
+                </div>
+                <div class="feature-card" data-animation="slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Medical Grade Security</h3>
+                    <p>HIPAA compliant with end-to-end encryption to protect your sensitive health information.</p>
+                </div>
+                <div class="feature-card" data-animation="slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Cross-Platform Access</h3>
+                    <p>Access your medication profile from any device, anywhere, anytime.</p>
+                </div>
+                <div class="feature-card" data-animation="slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Expert Verified</h3>
+                    <p>All recommendations are reviewed and verified by licensed pharmacists and doctors.</p>
+                </div>
+                <div class="feature-card" data-animation="slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Health Insights</h3>
+                    <p>Track your medication history and receive personalized health insights over time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How MediGuard Works</h2>
+                <p class="section-subtitle">Three simple steps to safer medication management</p>
+            </div>
+            <div class="steps-container">
+                <div class="step-item" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Enter Your Medications</h3>
+                        <p>Simply type in all the medications you're currently taking, including prescriptions, over-the-counter drugs, and supplements.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="typing-animation">
+                            <i class="fas fa-keyboard"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-item" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>AI Analysis</h3>
+                        <p>Our advanced AI instantly cross-references your medications against our comprehensive database of drug interactions and side effects.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="analysis-animation">
+                            <div class="brain-scan"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-item" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Get Insights</h3>
+                        <p>Receive detailed reports on potential interactions, side effects, and personalized recommendations for safer medication use.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="report-animation">
+                            <i class="fas fa-file-medical-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Users Say</h2>
+                <p class="section-subtitle">Real stories from real people</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"MediGuard saved my life! It detected a dangerous interaction between my blood pressure medication and a supplement I was taking. My doctor was amazed."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=100&h=100&fit=crop&crop=face" alt="Sarah Johnson">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>Retired Teacher, 67</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"As someone who takes multiple medications, MediGuard gives me peace of mind. The interface is so easy to use, even for someone like me who's not tech-savvy."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Michael Chen">
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <span>Engineer, 45</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"I recommend MediGuard to all my patients. It's an invaluable tool that helps prevent medication errors and keeps people safe."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=100&h=100&fit=crop&crop=face" alt="Dr. Emily Rodriguez">
+                            <div class="author-info">
+                                <h4>Dr. Emily Rodriguez</h4>
+                                <span>Family Physician</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev" id="prev-testimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="slider-btn next" id="next-testimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section (Replacing Pricing) -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Ready to Keep Your Medications Safe?</h2>
+                    <p>Join thousands of users who trust MediGuard to protect their health. Start using our free medicine interaction checker today!</p>
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% Free to Use</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>No Registration Required</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Instant Results</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>AI-Powered Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large pulse-btn" id="cta-start-btn">
+                        <i class="fas fa-shield-virus"></i>
+                        Check Your Medications Now
+                    </button>
+                    <button class="btn btn-outline btn-large" id="learn-more-btn">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shield-virus"></i>
+                        <span>MediGuard</span>
+                    </div>
+                    <p>Protecting lives through intelligent medication safety technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#">Safety Guidelines</a></li>
+                        <li><a href="#">Drug Database</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Medical Advisory</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Medical Disclaimer</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MediGuard. All rights reserved. This is a free educational project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

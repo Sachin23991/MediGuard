@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediGuard AI - Advanced Medicine Safety Platform</title>
+    <link rel="stylesheet" href="homepage_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor Trail Effect -->
+    <div class="cursor-trail"></div>
+    
+    <!-- Background Animation Canvas -->
+    <canvas id="background-canvas"></canvas>
+    
+    <!-- Preloader -->
+    <div class="quantum-preloader" id="preloader">
+        <div class="dna-structure">
+            <div class="helix"></div>
+            <div class="helix"></div>
+            <div class="base-pairs">
+                <div class="pair"></div>
+                <div class="pair"></div>
+                <div class="pair"></div>
+                <div class="pair"></div>
+                <div class="pair"></div>
+            </div>
+        </div>
+        <div class="loading-text">
+            <h3>Initializing Quantum AI</h3>
+            <div class="glitch-text" data-text="MEDIGUARD">MEDIGUARD</div>
+        </div>
+        <div class="progress-ring">
+            <svg class="progress-svg" viewBox="0 0 120 120">
+                <circle class="progress-bg" cx="60" cy="60" r="54"/>
+                <circle class="progress-fill" cx="60" cy="60" r="54"/>
+            </svg>
+            <span class="progress-text">0%</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav" id="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-atom"></i>
+                </div>
+                <span class="logo-text">MediGuard<span class="ai-text">AI</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#checker" class="nav-link">Checker</a>
+                
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-shield-virus"></i>
+                    <span>AI-Powered Medicine Safety</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-main">Protect Your Health with</span>
+                    <span class="title-highlight">Quantum Medicine Analysis</span>
+                </h1>
+                <p class="hero-description">
+                    Our advanced AI analyzes drug interactions in real-time using quantum computing principles 
+                    to ensure your medication safety with 99.9% accuracy.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary quantum-btn" id="start-analysis">
+                        <span class="btn-content">
+                            <i class="fas fa-rocket"></i>
+                            Start Analysis
+                        </span>
+                        <div class="btn-particles"></div>
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="medical-hologram">
+                    <div class="molecule-structure">
+                        <div class="atom center"></div>
+                        <div class="atom orbit-1"></div>
+                        <div class="atom orbit-2"></div>
+                        <div class="atom orbit-3"></div>
+                        <div class="orbit-ring ring-1"></div>
+                        <div class="orbit-ring ring-2"></div>
+                        <div class="orbit-ring ring-3"></div>
+                    </div>
+                    <div class="data-streams">
+                        <div class="stream stream-1"></div>
+                        <div class="stream stream-2"></div>
+                        <div class="stream stream-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Medicine Checker Section -->
+        <section class="checker-section" id="checker">
+            <div class="section-header">
+                <h2 class="section-title">Quantum Medicine Analyzer</h2>
+                <p class="section-subtitle">Enter your medications for instant AI-powered safety analysis</p>
+            </div>
+
+            <div class="checker-interface">
+                <div class="input-zone">
+                    <div class="neural-input">
+                        <input type="text" id="medicine-input" placeholder="Enter medicine name..." class="medicine-input">
+                        <button class="add-btn" id="add-medicine">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="input-glow"></div>
+                    </div>
+                    
+                    <div class="medicine-grid" id="medicine-grid">
+                        <!-- Medicine cards will be added here dynamically -->
+                    </div>
+
+                    <button class="analyze-btn" id="analyze-btn" disabled>
+                        <span class="btn-text">Analyze Interactions</span>
+                        <div class="btn-wave"></div>
+                        <div class="btn-particles-flow"></div>
+                    </button>
+                </div>
+
+                <div class="analysis-display" id="analysis-display">
+                    <!-- Analysis results will appear here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Real-time Activity Feed -->
+        <section class="activity-feed">
+            <div class="feed-header">
+                <h3><i class="fas fa-activity"></i> Live Activity</h3>
+                <div class="live-indicator">
+                    <div class="pulse-dot"></div>
+                    <span>LIVE</span>
+                </div>
+            </div>
+            <div class="activity-stream" id="activity-stream">
+                <!-- Real-time activities will be populated here -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Quantum Loader for Analysis -->
+    <div class="quantum-loader hidden" id="quantum-loader">
+        <div class="loader-container">
+            <div class="quantum-rings">
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+                <div class="ring ring-4"></div>
+            </div>
+            <div class="ai-processing">
+                <h3>AI Processing</h3>
+                <div class="processing-text" id="processing-text">Initializing quantum analysis...</div>
+                <div class="processing-bar">
+                    <div class="processing-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="homepage_script.js"></script>
+</body>
+</html>
